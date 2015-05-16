@@ -1,5 +1,0 @@
-﻿Annotates the middle
-convert $ef$2311118044_24a2c2874a_o.jpg -fill white -undercolor #00000080 -pointsize 45 -gravity Center -annotate +0+0 " Bananas aplenty " $ef$2311118044_24a2c2874a_o.jpg
-
-Annotates the top
-convert $ef$2311118044_24a2c2874a_o.jpg -fill white -undercolor #00000080 -pointsize 45 -gravity North -annotate +0+64 " Bananas aplenty " $ef$2311118044_24a2c2874a_o.jpg

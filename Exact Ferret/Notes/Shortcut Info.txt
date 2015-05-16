@@ -1,9 +1,0 @@
-﻿Use ShortcutUtil to create shortcuts with hotkeys when hotkeys are needed.
-To determine if the hotkey exists, pass the shortcut to getShortcutHotKey.
-If the result is 0 or -1 (not found), there is no hot key. Otherwise there is.
-For specific hot keys:
-Ctrl+Alt+P: 1616
-Ctrl+Alt+Q: 1617
-Ctrl+Alt+A: 1601
-Ctrl+Alt+B: 1602
-etc
