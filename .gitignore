@@ -6,3 +6,4 @@ packages/
 *.Designer.cs
 *.dll
 *.pdb
+*.log
