@@ -1,0 +1,1 @@
+[Environment]::SetEnvironmentVariable("EXACTFERRET", $null, "Machine")

@@ -1,0 +1,29 @@
+1. If changes to uninstall process:
+	a. Build Admin-UninstallExactFerret.SED
+	b. Set to run as administrator
+	c. Adjust icon and file metadata
+2. Build Admin-InstallExactFerret.SED
+3. Set to run as administrator
+4. Build User-InstallExactFerret.SED
+5. Adjust icon and file metadata
+
+
+Metadata:
+
+		VALUE "CompanyName", "Kangaroo Standard"
+		VALUE "FileDescription", "Exact Ferret Installer"
+		VALUE "FileVersion", "3.0.0"
+		VALUE "InternalName", "Wextract                "
+		VALUE "LegalCopyright", "© 2014 Kangaroo Standard. All rights reserved."
+		VALUE "OriginalFilename", "InstallExactFerret.exe"
+		VALUE "ProductName", "Exact Ferret"
+		VALUE "ProductVersion", "3.0.0"
+
+		VALUE "CompanyName", "Kangaroo Standard"
+		VALUE "FileDescription", "Exact Ferret Uninstaller"
+		VALUE "FileVersion", "3.0.0"
+		VALUE "InternalName", "Wextract                "
+		VALUE "LegalCopyright", "© 2014 Kangaroo Standard. All rights reserved."
+		VALUE "OriginalFilename", "UninstallExactFerret.exe"
+		VALUE "ProductName", "Exact Ferret"
+		VALUE "ProductVersion", "3.0.0"

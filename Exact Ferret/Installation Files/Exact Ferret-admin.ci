@@ -1,0 +1,1104 @@
+﻿<project version = 9 civer = 6.1.2 winver = "2.13/6.2.9200" >
+   <autorun >0</>
+   <autoclose >1</>
+   <compname >Kangaroo Standard</>
+   <produrl >http://www.kangaroostandard.com/</>
+   <ver >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\bin\x64\Release\Exact Ferret.exe</>
+   <supurl ></>
+   <updurl ></>
+   <dlgfont >verdana</>
+   <headlogo >default - 1</>
+   <dlgfontsize >s8</>
+   <output >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Files</>
+   <exename >InstallExactFerret-admin.exe</>
+   <beffile ></>
+   <aftfile ></>
+   <uninclude >1</>
+   <lang >english</>
+   <addlang ></>
+   <selfextr >1</>
+   <instpath >C:\Program Files\Exact Ferret</>
+   <voltype >nolimit</>
+   <volsize ></>
+   <volpattern >disk%i.pak</>
+   <password ></>
+   <progname >Exact Ferret</>
+   <appname >Exact Ferret</>
+   <bl ></>
+   <blurl ></>
+   <unpath >inst</>
+   <unexe >uninstall.exe</>
+   <unlog >uninstall.ini</>
+   <installroot sorttype = 0 >
+      <children >
+         <install id = install expanded = 2 >
+            <children >
+               <_ tag = 0 id = varset >
+                  <desc >Set initial variables</>
+                  <varlist >
+                     <rows >
+                        <_ >
+                           <varname >openHelpAfter</>
+                           <value >0</>
+                           <if ></>
+                        </>
+                     </>
+                  </>
+               </>
+               <_ tag = 0 id = getuser disabled = 0 >
+                  <desc >Apply the original user's username to variables</>
+                  <var >username</>
+                  <vars >appdata,apppath,userpath,desktop,progpath,startup</>
+                  <if ></>
+               </>
+               <_ tag = 0 id = checkreq expanded = 0 >
+                  <children >
+                     <_ tag = 0 id = empty ></>
+                  </>
+                  <desc >Check Windows version</>
+                  <checktype >win7</>
+                  <not >0</>
+                  <resvar >checkret</>
+                  <msg >Exact Ferret requires Windows 7 or higher.</>
+               </>
+               <_ tag = 0 id = if expanded = 0 >
+                  <children >
+                     <_ tag = 0 id = exit >
+                        <desc >Quit with an error message</>
+                        <extype >exit</>
+                        <code >1</>
+                        <msg >Exact Ferret requires a 64-bit operating system.</>
+                     </>
+                  </>
+                  <desc >Check operating system bitness</>
+                  <else ></>
+                  <condlist >
+                     <rows >
+                        <_ >
+                           <varname >os64</>
+                           <iftype >equal</>
+                           <not >1</>
+                           <value >1</>
+                           <orand >and</>
+                        </>
+                     </>
+                  </>
+               </>
+               <_ tag = 0 id = checkreq expanded = 0 >
+                  <children >
+                     <_ tag = 0 id = empty ></>
+                  </>
+                  <desc >Check .NET version</>
+                  <checktype >net4</>
+                  <not >0</>
+                  <resvar >checkret</>
+                  <msg >Exact Ferret requires .NET Framework 4.0.</>
+               </>
+               <_ tag = 0 id = unpack >
+                  <desc >Install temporary script files</>
+                  <comptype >default</>
+                  <ratio >r5</>
+                  <solid >1</>
+                  <path >app</>
+                  <custpath ></>
+                  <ifexist >over</>
+                  <if ></>
+                  <srclist >
+                     <rows >
+                        <_ >
+                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Scripts\StopExactFerret.ps1</>
+                           <recurse >1</>
+                           <justfile >0</>
+                           <emptydir >0</>
+                           <exclude ></>
+                        </>
+                        <_ >
+                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Scripts\CreateHelpShortcut.ps1</>
+                           <recurse >1</>
+                           <justfile >0</>
+                           <emptydir >0</>
+                           <exclude ></>
+                        </>
+                        <_ >
+                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Scripts\SetPathEnvVar.ps1</>
+                           <recurse >1</>
+                           <justfile >0</>
+                           <emptydir >0</>
+                           <exclude ></>
+                        </>
+                        <_ >
+                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Scripts\UnsetPathEnvVar.ps1</>
+                           <recurse >1</>
+                           <justfile >0</>
+                           <emptydir >0</>
+                           <exclude ></>
+                        </>
+                        <_ >
+                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Scripts\SaveSetupPathTempFile.ps1</>
+                           <recurse >1</>
+                           <justfile >0</>
+                           <emptydir >0</>
+                           <exclude ></>
+                        </>
+                        <_ >
+                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Scripts\Windows7LockUnprep.ps1</>
+                           <recurse >1</>
+                           <justfile >0</>
+                           <emptydir >0</>
+                           <exclude ></>
+                        </>
+                        <_ >
+                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Scripts\UnsetMachineEnvVar.ps1</>
+                           <recurse >1</>
+                           <justfile >0</>
+                           <emptydir >0</>
+                           <exclude ></>
+                        </>
+                        <_ >
+                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Scripts\SetMachineEnvVar.ps1</>
+                           <recurse >1</>
+                           <justfile >0</>
+                           <emptydir >0</>
+                           <exclude ></>
+                        </>
+                        <_ >
+                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Scripts\Windows7LockPrep.ps1</>
+                           <recurse >1</>
+                           <justfile >0</>
+                           <emptydir >0</>
+                           <exclude ></>
+                        </>
+                     </>
+                  </>
+                  <varlist >
+                     <rows ></>
+                  </>
+               </>
+               <_ tag = 0 id = run disabled = 1 >
+                  <desc >Clear the finished file from temp path</>
+                  <path >sys</>
+                  <name >cmd</>
+                  <cmdline >/c powershell -ExecutionPolicy ByPass .\ClearTempPath.ps1 -tempPath '#apppath#'</>
+                  <work >app</>
+                  <defwork ></>
+                  <wait >1</>
+                  <runas >hide</>
+                  <if ></>
+               </>
+               <_ id = dlgwel >
+                  <desc >Dialog Welcome</>
+                  <buttons >auto</>
+                  <design >left</>
+                  <headlogo ></>
+                  <varlist >
+                     <rows ></>
+                  </>
+                  <head ></>
+                  <headtext ></>
+                  <dlgtext ></>
+                  <if ></>
+               </>
+               <_ id = dlglic disabled = 1 >
+                  <desc ></>
+                  <file ></>
+                  <print >1</>
+                  <iagree >radio</>
+                  <buttons >pnc</>
+                  <design >left</>
+                  <headlogo ></>
+                  <varlist >
+                     <rows >
+                        <_ >
+                           <varname >Liccolor</>
+                           <value >1</>
+                        </>
+                     </>
+                  </>
+                  <head ></>
+                  <headtext ></>
+                  <if ></>
+               </>
+               <_ tag = 0 id = regget disabled = 1 >
+                  <desc >Determine if Exact Ferret 2.0 is installed</>
+                  <root >curuser</>
+                  <subkey >SOFTWARE\Microsoft\Windows\CurrentVersion\Run</>
+                  <wow64 >0</>
+                  <reglist >
+                     <rows >
+                        <_ >
+                           <valname >ExactFerret</>
+                           <varname >installed2</>
+                           <defval >0</>
+                        </>
+                     </>
+                  </>
+               </>
+               <_ tag = 0 id = if expanded = 0 disabled = 1 >
+                  <children >
+                     <_ tag = 0 id = message expanded = 0 disabled = 0 >
+                        <children >
+                           <_ tag = 0 id = run >
+                              <desc ></>
+                              <path >sys</>
+                              <name >rundll32</>
+                              <cmdline >VistaLib64.dll RunNonElevated "#apppath#\Uninstall2.exe"</>
+                              <work >app</>
+                              <defwork ></>
+                              <wait >1</>
+                              <runas >norm</>
+                              <if ></>
+                           </>
+                        </>
+                        <desc >Uninstall Exact Ferret 2.0</>
+                        <type >info</>
+                        <caption >Exact Ferret</>
+                        <text >Setup has detected that you have an older version of Exact Ferret installed. To continue, this version must be removed. Click OK to quit setup and launch the uninstaller.</>
+                        <btns >okcancel</>
+                        <resvar >msgret</>
+                        <msgif >ok</>
+                        <if ></>
+                     </>
+                     <_ tag = 0 id = exit >
+                        <desc >Exit</>
+                        <extype >exit</>
+                        <code >0</>
+                        <msg ></>
+                     </>
+                  </>
+                  <desc >If Exact Ferret 2.0 is installed</>
+                  <else ></>
+                  <condlist >
+                     <rows >
+                        <_ >
+                           <varname >installed2</>
+                           <iftype >notempty</>
+                           <not >0</>
+                           <value ></>
+                           <orand >and</>
+                        </>
+                     </>
+                  </>
+               </>
+               <_ tag = 0 id = regget disabled = 1 >
+                  <desc >Determine if Exact Ferret 3.0.0 is installed</>
+                  <root >locmach</>
+                  <subkey >SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Exact Ferret</>
+                  <wow64 >1</>
+                  <reglist >
+                     <rows >
+                        <_ >
+                           <valname >UninstallString</>
+                           <varname >installed300</>
+                           <defval >0</>
+                        </>
+                     </>
+                  </>
+               </>
+               <_ tag = 0 id = if expanded = 0 disabled = 1 >
+                  <children >
+                     <_ tag = 0 id = message expanded = 0 disabled = 0 >
+                        <children >
+                           <_ tag = 0 id = run >
+                              <desc ></>
+                              <path >app</>
+                              <name >Uninstall300.exe</>
+                              <cmdline ></>
+                              <work >default</>
+                              <defwork ></>
+                              <wait >0</>
+                              <runas >norm</>
+                              <if ></>
+                           </>
+                        </>
+                        <desc >Uninstall Exact Ferret 3.0.0</>
+                        <type >info</>
+                        <caption >Exact Ferret</>
+                        <text >Setup has detected that you have an older version of Exact Ferret installed. To continue, this version must be removed. Click OK to quit setup and launch the uninstaller.</>
+                        <btns >okcancel</>
+                        <resvar >msgret</>
+                        <msgif >ok</>
+                        <if ></>
+                     </>
+                     <_ tag = 0 id = exit >
+                        <desc >Exit</>
+                        <extype >exit</>
+                        <code >0</>
+                        <msg ></>
+                     </>
+                  </>
+                  <desc >If Exact Ferret 2.0 is installed</>
+                  <else ></>
+                  <condlist >
+                     <rows >
+                        <_ >
+                           <varname >installed300</>
+                           <iftype >substr</>
+                           <not >0</>
+                           <value >UninstallExactFerret.exe</>
+                           <orand >and</>
+                        </>
+                     </>
+                  </>
+               </>
+               <_ id = dlgpath >
+                  <desc >Get the installation directory</>
+                  <buttons >auto</>
+                  <design >left</>
+                  <headlogo ></>
+                  <chlist >
+                     <rows ></>
+                  </>
+                  <varlist >
+                     <rows ></>
+                  </>
+                  <head ></>
+                  <headtext ></>
+                  <dlgtext ></>
+                  <pathadd ></>
+                  <enforce >0</>
+                  <if ></>
+                  <savepath >1</>
+               </>
+               <_ tag = 0 id = run >
+                  <desc >Stop Exact Ferret</>
+                  <path >sys</>
+                  <name >cmd</>
+                  <cmdline >/c powershell -ExecutionPolicy ByPass .\StopExactFerret.ps1</>
+                  <work >app</>
+                  <defwork ></>
+                  <wait >1</>
+                  <runas >hide</>
+                  <if ></>
+               </>
+               <_ tag = 0 id = run >
+                  <desc >Set the EXACTFERRET environment variable at the Machine level</>
+                  <path >sys</>
+                  <name >cmd</>
+                  <cmdline >/c powershell -ExecutionPolicy ByPass .\SetMachineEnvVar.ps1 -installDir '#setuppath#'</>
+                  <work >app</>
+                  <defwork ></>
+                  <wait >1</>
+                  <runas >hide</>
+                  <if ></>
+               </>
+               <_ tag = 0 id = run >
+                  <desc >Set the PATH environment variable at the Machine level</>
+                  <path >sys</>
+                  <name >cmd</>
+                  <cmdline >/c powershell -ExecutionPolicy ByPass .\SetPathEnvVar.ps1 -installDir '#setuppath#'</>
+                  <work >app</>
+                  <defwork ></>
+                  <wait >1</>
+                  <runas >hide</>
+                  <if ></>
+               </>
+               <_ id = dlgprog expanded = 2 >
+                  <children >
+                     <_ tag = 0 id = unpack >
+                        <desc >Install the files</>
+                        <comptype >default</>
+                        <ratio >r5</>
+                        <solid >1</>
+                        <path >inst</>
+                        <custpath ></>
+                        <ifexist >over</>
+                        <if ></>
+                        <srclist >
+                           <rows rel = unpack >
+                              <_ >
+                                 <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\bin\x64\Release\Exact Ferret.exe</>
+                                 <recurse >1</>
+                                 <justfile >0</>
+                                 <emptydir >0</>
+                                 <exclude ></>
+                              </>
+                              <_ >
+                                 <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\JpegMetaData\bin\x86\Release\JpegMetaData.exe</>
+                                 <recurse >1</>
+                                 <justfile >0</>
+                                 <emptydir >0</>
+                                 <exclude ></>
+                              </>
+                              <_ >
+                                 <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\bin\x64\Release\Newtonsoft.Json.dll</>
+                                 <recurse >1</>
+                                 <justfile >0</>
+                                 <emptydir >0</>
+                                 <exclude ></>
+                              </>
+                              <_ >
+                                 <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Files\vcomp100.dll</>
+                                 <recurse >1</>
+                                 <justfile >0</>
+                                 <emptydir >0</>
+                                 <exclude ></>
+                              </>
+                              <_ >
+                                 <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\bin\x64\Release\Exact Ferret.exe.config</>
+                                 <recurse >1</>
+                                 <justfile >0</>
+                                 <emptydir >0</>
+                                 <exclude ></>
+                              </>
+                              <_ disabled = 1 >
+                                 <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\bin\x64\Release\Exact Ferret.pdb</>
+                                 <recurse >1</>
+                                 <justfile >0</>
+                                 <emptydir >0</>
+                                 <exclude ></>
+                              </>
+                              <_ >
+                                 <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Files\blank.jpg</>
+                                 <recurse >1</>
+                                 <justfile >0</>
+                                 <emptydir >0</>
+                                 <exclude ></>
+                              </>
+                              <_ >
+                                 <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Files\convert.exe</>
+                                 <recurse >1</>
+                                 <justfile >0</>
+                                 <emptydir >0</>
+                                 <exclude ></>
+                              </>
+                              <_ >
+                                 <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Tray Icon\bin\x64\Release\Exact Ferret Tray Icon.exe</>
+                                 <recurse >1</>
+                                 <justfile >0</>
+                                 <emptydir >0</>
+                                 <exclude ></>
+                              </>
+                              <_ disabled = 1 >
+                                 <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Tray Icon\bin\x64\Release\Exact Ferret Tray Icon.exe.config</>
+                                 <recurse >1</>
+                                 <justfile >0</>
+                                 <emptydir >0</>
+                                 <exclude ></>
+                              </>
+                              <_ disabled = 1 >
+                                 <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Tray Icon\bin\x64\Release\Exact Ferret Tray Icon.pdb</>
+                                 <recurse >1</>
+                                 <justfile >0</>
+                                 <emptydir >0</>
+                                 <exclude ></>
+                              </>
+                              <_ >
+                                 <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Files\bin</>
+                                 <recurse >1</>
+                                 <justfile >0</>
+                                 <emptydir >0</>
+                                 <exclude ></>
+                              </>
+                           </>
+                        </>
+                        <varlist >
+                           <rows ></>
+                        </>
+                     </>
+                     <_ tag = 0 id = unpack >
+                        <desc >Install the dictionary file</>
+                        <comptype >default</>
+                        <ratio >r5</>
+                        <solid >1</>
+                        <path >inst</>
+                        <custpath ></>
+                        <ifexist >ask</>
+                        <if >!#silent#</>
+                        <srclist >
+                           <rows rel = unpack >
+                              <_ >
+                                 <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Files\dictionary.txt</>
+                                 <recurse >1</>
+                                 <justfile >0</>
+                                 <emptydir >0</>
+                                 <exclude ></>
+                              </>
+                              <_ >
+                                 <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Files\Dictionaries</>
+                                 <recurse >1</>
+                                 <justfile >0</>
+                                 <emptydir >0</>
+                                 <exclude ></>
+                              </>
+                           </>
+                        </>
+                        <varlist >
+                           <rows ></>
+                        </>
+                     </>
+                     <_ tag = 0 id = unpack >
+                        <desc >Install the dictionary file - silent mode</>
+                        <comptype >default</>
+                        <ratio >r5</>
+                        <solid >1</>
+                        <path >inst</>
+                        <custpath ></>
+                        <ifexist >skip</>
+                        <if >#silent#</>
+                        <srclist >
+                           <rows rel = unpack >
+                              <_ >
+                                 <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Files\dictionary.txt</>
+                                 <recurse >1</>
+                                 <justfile >0</>
+                                 <emptydir >0</>
+                                 <exclude ></>
+                              </>
+                              <_ >
+                                 <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Files\Dictionaries</>
+                                 <recurse >1</>
+                                 <justfile >0</>
+                                 <emptydir >0</>
+                                 <exclude ></>
+                              </>
+                           </>
+                        </>
+                        <varlist >
+                           <rows ></>
+                        </>
+                     </>
+                     <_ id = shcut >
+                        <desc >Create program shortcuts</>
+                        <shpath >prog</>
+                        <shfile >#lunname#</>
+                        <path >inst</>
+                        <file >uninstall.exe</>
+                        <icon ></>
+                        <cmdline ></>
+                        <comment ></>
+                        <work >inst</>
+                        <defwork ></>
+                        <runas >norm</>
+                        <runasadmin >0</>
+                     </>
+                     <_ tag = 0 id = shlist >
+                        <desc >Create program shortcuts</>
+                        <shlist >
+                           <rows >
+                              <_ >
+                                 <shpath >comprog</>
+                                 <shfile >Exact Ferret</>
+                                 <path >inst</>
+                                 <file >Exact Ferret.exe</>
+                                 <cmdline >-settings</>
+                                 <icon ></>
+                                 <work >inst</>
+                                 <defwork ></>
+                                 <if ></>
+                              </>
+                              <_ >
+                                 <shpath >comprog</>
+                                 <shfile >Exact Ferret - Quick Run</>
+                                 <path >inst</>
+                                 <file >Exact Ferret.exe</>
+                                 <cmdline >-quick</>
+                                 <icon ></>
+                                 <work >inst</>
+                                 <defwork ></>
+                                 <if ></>
+                              </>
+                              <_ disabled = 1 >
+                                 <shpath >comprog</>
+                                 <shfile >Exact Ferret Help</>
+                                 <path >inst</>
+                                 <file >ExactFerretHelp.pdf</>
+                                 <cmdline ></>
+                                 <icon ></>
+                                 <work >inst</>
+                                 <defwork ></>
+                                 <if ></>
+                              </>
+                           </>
+                        </>
+                     </>
+                     <_ tag = 0 id = run >
+                        <desc >Create the help URL shortcut</>
+                        <path >sys</>
+                        <name >cmd</>
+                        <cmdline >/c powershell -ExecutionPolicy ByPass .\CreateHelpShortcut.ps1</>
+                        <work >app</>
+                        <defwork ></>
+                        <wait >1</>
+                        <runas >hide</>
+                        <if ></>
+                     </>
+                     <_ id = uninstexe >
+                        <desc >Create uninstaller</>
+                     </>
+                     <_ id = unar >
+                        <desc >Create entry in Control Panel</>
+                        <name ></>
+                        <path >inst</>
+                        <ifile >Exact Ferret.exe</>
+                     </>
+                  </>
+                  <desc >Go into the item for viewing unpacking actions.</>
+                  <auto >1</>
+                  <buttons >nc</>
+                  <design >left</>
+                  <headlogo ></>
+                  <varlist >
+                     <rows ></>
+                  </>
+                  <head ></>
+                  <headtext ></>
+                  <dlgtext ></>
+                  <if ></>
+               </>
+               <_ tag = 0 id = if expanded = 2 >
+                  <children >
+                     <_ tag = 0 id = run >
+                        <desc >Prepare Windows 7 for lock screen changes</>
+                        <path >sys</>
+                        <name >cmd</>
+                        <cmdline >/c powershell -ExecutionPolicy ByPass .\Windows7LockPrep.ps1</>
+                        <work >app</>
+                        <defwork ></>
+                        <wait >1</>
+                        <runas >hide</>
+                        <if ></>
+                     </>
+                     <_ tag = 0 id = regset >
+                        <desc >Prepare Windows 7 for lock screen changes</>
+                        <root >locmach</>
+                        <subkey >SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI\Background</>
+                        <wow64 >1</>
+                        <reglist >
+                           <rows >
+                              <_ >
+                                 <valname >OEMBackground</>
+                                 <regtype >num</>
+                                 <value >1</>
+                              </>
+                           </>
+                        </>
+                     </>
+                  </>
+                  <desc >If Windows 7</>
+                  <else ></>
+                  <condlist >
+                     <rows >
+                        <_ >
+                           <varname >oswinname</>
+                           <iftype >equal</>
+                           <not >0</>
+                           <value >Windows 7</>
+                           <orand >and</>
+                        </>
+                     </>
+                  </>
+               </>
+               <_ tag = 0 id = regset >
+                  <desc >Create the desktop right-click shortcut</>
+                  <root >class</>
+                  <subkey >DesktopBackground\Shell\Exact Ferret</>
+                  <wow64 >0</>
+                  <reglist >
+                     <rows >
+                        <_ >
+                           <valname >Icon</>
+                           <regtype >str</>
+                           <value >"#setuppath#\Exact Ferret.exe"</>
+                        </>
+                        <_ >
+                           <valname >Position</>
+                           <regtype >str</>
+                           <value >Bottom</>
+                        </>
+                     </>
+                  </>
+               </>
+               <_ tag = 0 id = regset >
+                  <desc >Create the desktop right-click shortcut</>
+                  <root >class</>
+                  <subkey >DesktopBackground\Shell\Exact Ferret\command</>
+                  <wow64 >0</>
+                  <reglist >
+                     <rows >
+                        <_ >
+                           <valname ></>
+                           <regtype >str</>
+                           <value >"#setuppath#\Exact Ferret.exe" -settings</>
+                        </>
+                     </>
+                  </>
+               </>
+               <_ tag = 0 id = regset >
+                  <desc >Create the .exf association</>
+                  <root >class</>
+                  <subkey >.exf</>
+                  <wow64 >0</>
+                  <reglist >
+                     <rows >
+                        <_ >
+                           <valname ></>
+                           <regtype >str</>
+                           <value >Exact.Ferret.Settings</>
+                        </>
+                     </>
+                  </>
+               </>
+               <_ tag = 0 id = regset >
+                  <desc >Create the .exf association</>
+                  <root >class</>
+                  <subkey >Exact.Ferret.Settings</>
+                  <wow64 >0</>
+                  <reglist >
+                     <rows >
+                        <_ >
+                           <valname ></>
+                           <regtype >str</>
+                           <value >Exact Ferret Settings File</>
+                        </>
+                     </>
+                  </>
+               </>
+               <_ tag = 0 id = regset >
+                  <desc >Create the .exf association</>
+                  <root >class</>
+                  <subkey >Exact.Ferret.Settings\DefaultIcon</>
+                  <wow64 >0</>
+                  <reglist >
+                     <rows >
+                        <_ >
+                           <valname ></>
+                           <regtype >str</>
+                           <value >"#setuppath#\Exact Ferret.exe"</>
+                        </>
+                     </>
+                  </>
+               </>
+               <_ tag = 0 id = regset >
+                  <desc >Create the .exf association</>
+                  <root >class</>
+                  <subkey >Exact.Ferret.Settings\shell\open</>
+                  <wow64 >0</>
+                  <reglist >
+                     <rows >
+                        <_ >
+                           <valname ></>
+                           <regtype >str</>
+                           <value >Import</>
+                        </>
+                     </>
+                  </>
+               </>
+               <_ tag = 0 id = regset >
+                  <desc >Create the .exf association</>
+                  <root >class</>
+                  <subkey >Exact.Ferret.Settings\shell\open\command</>
+                  <wow64 >0</>
+                  <reglist >
+                     <rows >
+                        <_ >
+                           <valname ></>
+                           <regtype >str</>
+                           <value >"#setuppath#\Exact Ferret.exe" -import "%1"</>
+                        </>
+                     </>
+                  </>
+               </>
+               <_ tag = 0 id = run disabled = 1 >
+                  <desc >Start Exact Ferret</>
+                  <path >sys</>
+                  <name >rundll32</>
+                  <cmdline >VistaLib64.dll RunNonElevated .\StartExactFerret.bat "#setuppath#"</>
+                  <work >app</>
+                  <defwork ></>
+                  <wait >0</>
+                  <runas >norm</>
+                  <if ></>
+               </>
+               <_ id = dlgfin >
+                  <desc >Dialog Finish</>
+                  <buttons >c</>
+                  <design >left</>
+                  <headlogo ></>
+                  <chlist >
+                     <rows >
+                        <_ >
+                           <varname >openHelpAfter</>
+                           <value >Open the help documentation</>
+                        </>
+                     </>
+                  </>
+                  <varlist >
+                     <rows ></>
+                  </>
+                  <head ></>
+                  <headtext ></>
+                  <dlgtext ></>
+               </>
+               <_ tag = 0 id = unpack >
+                  <desc >Save a temp file indicating user wants to open help</>
+                  <comptype >default</>
+                  <ratio >r5</>
+                  <solid >1</>
+                  <path >app</>
+                  <custpath ></>
+                  <ifexist >over</>
+                  <if >openHelpAfter</>
+                  <srclist >
+                     <rows >
+                        <_ >
+                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Files\openHelpAfter</>
+                           <recurse >1</>
+                           <justfile >0</>
+                           <emptydir >0</>
+                           <exclude ></>
+                        </>
+                     </>
+                  </>
+                  <varlist >
+                     <rows ></>
+                  </>
+               </>
+               <_ tag = 0 id = run >
+                  <desc >Save a temp file with the setuppath in it</>
+                  <path >sys</>
+                  <name >cmd</>
+                  <cmdline >/c powershell -ExecutionPolicy ByPass .\SaveSetupPathTempFile.ps1 -tempPath '#apppath#' -installDir '#setuppath#'</>
+                  <work >app</>
+                  <defwork ></>
+                  <wait >1</>
+                  <runas >hide</>
+                  <if ></>
+               </>
+               <_ tag = 0 id = unpack >
+                  <desc >Save a temp file indicating installation finished successfully</>
+                  <comptype >default</>
+                  <ratio >r5</>
+                  <solid >1</>
+                  <path >app</>
+                  <custpath ></>
+                  <ifexist >over</>
+                  <if ></>
+                  <srclist >
+                     <rows >
+                        <_ >
+                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Files\finished</>
+                           <recurse >1</>
+                           <justfile >0</>
+                           <emptydir >0</>
+                           <exclude ></>
+                        </>
+                     </>
+                  </>
+                  <varlist >
+                     <rows ></>
+                  </>
+               </>
+               <_ tag = 0 id = run disabled = 1 >
+                  <desc >Configure Exact Ferret now</>
+                  <path >sys</>
+                  <name >rundll32</>
+                  <cmdline >VistaLib64.dll RunNonElevated .\ConfigureExactFerretNow.bat "#setuppath#"</>
+                  <work >app</>
+                  <defwork ></>
+                  <wait >0</>
+                  <runas >norm</>
+                  <if ></>
+               </>
+               <_ tag = 0 id = run disabled = 1 >
+                  <desc >Open the help file</>
+                  <path >sys</>
+                  <name >rundll32</>
+                  <cmdline >VistaLib64.dll RunNonElevated "#setuppath#\ExactFerretHelp.pdf"</>
+                  <work >app</>
+                  <defwork ></>
+                  <wait >0</>
+                  <runas >norm</>
+                  <if >openHelpAfter</>
+               </>
+            </>
+            <icofile >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Icons\Tpdkdesign.net-Refresh-Cl-System-Install-1.ico</>
+            <resfile ></>
+            <leftimg >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Resources\ferret.jpg</>
+            <caption ></>
+            <verinfo >1</>
+            <noadmin >0</>
+            <selfdelete >0</>
+         </>
+      </>
+   </>
+   <uninstallroot sorttype = 0 >
+      <children >
+         <uninstall id = uninstall expanded = 2 >
+            <children >
+               <_ tag = 0 id = getuser disabled = 0 >
+                  <desc >Apply the original user's username to variables</>
+                  <var >username</>
+                  <vars >appdata,apppath,userpath,desktop,progpath,startup</>
+                  <if ></>
+               </>
+               <_ id = dlguconf >
+                  <desc >Dialog Confirmation</>
+                  <buttons >c</>
+                  <design >left</>
+                  <headlogo ></>
+                  <varlist >
+                     <rows ></>
+                  </>
+                  <head ></>
+                  <headtext ></>
+                  <dlgtext ></>
+                  <if ></>
+               </>
+               <_ tag = 0 id = run disabled = 0 >
+                  <desc >Stop Exact Ferret</>
+                  <path >sys</>
+                  <name >cmd</>
+                  <cmdline >/c powershell -ExecutionPolicy ByPass .\StopExactFerret.ps1</>
+                  <work >app</>
+                  <defwork ></>
+                  <wait >1</>
+                  <runas >hide</>
+                  <if ></>
+               </>
+               <_ tag = 0 id = run disabled = 0 >
+                  <desc >Unset the EXACTFERRET environment variable at the Machine level</>
+                  <path >sys</>
+                  <name >cmd</>
+                  <cmdline >/c powershell -ExecutionPolicy ByPass .\UnsetMachineEnvVar.ps1</>
+                  <work >app</>
+                  <defwork ></>
+                  <wait >1</>
+                  <runas >hide</>
+                  <if ></>
+               </>
+               <_ tag = 0 id = run disabled = 0 >
+                  <desc >Unset the PATH environment variable at the Machine level</>
+                  <path >sys</>
+                  <name >cmd</>
+                  <cmdline >/c powershell -ExecutionPolicy ByPass .\UnsetPathEnvVar.ps1 -installDir '#setuppath#'</>
+                  <work >app</>
+                  <defwork ></>
+                  <wait >1</>
+                  <runas >hide</>
+                  <if ></>
+               </>
+               <_ tag = 0 id = if expanded = 2 >
+                  <children >
+                     <_ tag = 0 id = run >
+                        <desc >Unprepare Windows 7 for lock screen changes</>
+                        <path >sys</>
+                        <name >cmd</>
+                        <cmdline >/c powershell -ExecutionPolicy ByPass .\Windows7LockUnprep.ps1</>
+                        <work >app</>
+                        <defwork ></>
+                        <wait >1</>
+                        <runas >hide</>
+                        <if ></>
+                     </>
+                     <_ tag = 0 id = regset >
+                        <desc >Unprepare Windows 7 for lock screen changes</>
+                        <root >locmach</>
+                        <subkey >SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI\Background</>
+                        <wow64 >1</>
+                        <reglist >
+                           <rows >
+                              <_ >
+                                 <valname >OEMBackground</>
+                                 <regtype >num</>
+                                 <value >0</>
+                              </>
+                           </>
+                        </>
+                     </>
+                  </>
+                  <desc >If Windows 7</>
+                  <else ></>
+                  <condlist >
+                     <rows >
+                        <_ >
+                           <varname >oswinname</>
+                           <iftype >equal</>
+                           <not >0</>
+                           <value >Windows 7</>
+                           <orand >and</>
+                        </>
+                     </>
+                  </>
+               </>
+               <_ id = dlguprog expanded = 0 >
+                  <children >
+                     <_ id = unprocess >
+                        <desc ></>
+                     </>
+                  </>
+                  <desc >Dialog Progress</>
+                  <buttons >nc</>
+                  <design >left</>
+                  <headlogo ></>
+                  <varlist >
+                     <rows ></>
+                  </>
+                  <auto >1</>
+                  <head ></>
+                  <headtext ></>
+                  <dlgtext ></>
+                  <if ></>
+               </>
+               <_ id = dlgundel >
+                  <desc ></>
+                  <buttons >nc</>
+                  <design >left</>
+                  <headlogo ></>
+                  <varlist >
+                     <rows ></>
+                  </>
+                  <head ></>
+                  <headtext ></>
+                  <dlgtext ></>
+                  <if ></>
+               </>
+               <_ id = dlgufin >
+                  <desc >Dialog Finish</>
+                  <buttons >nc</>
+                  <design >left</>
+                  <headlogo ></>
+                  <varlist >
+                     <rows ></>
+                  </>
+                  <head ></>
+                  <headtext ></>
+                  <dlgtext ></>
+                  <feedback ></>
+                  <if ></>
+               </>
+            </>
+            <unicon >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Icons\Tpdkdesign.net-Refresh-Cl-System-Install-1.ico</>
+            <unresfile ></>
+            <leftimg >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Resources\ferret.jpg</>
+            <caption ></>
+            <noadmin >0</>
+         </>
+      </>
+   </>
+   <phone ></>
+   <shfolder >Exact Ferret</>
+   <headcol ></>
+   <headtext ></>
+   <headimg ></>
+   <stretchback >0</>
+   <silentpar >-silent</>
+   <custfont ></>
+   <upinclude >0</>
+   <uppath >inst</>
+   <upexe >update.exe</>
+   <upurl ></>
+   <upxml >update.ini</>
+   <upredir ></>
+   <ignnotfound >0</>
+   <tozip >0</>
+   <zipfile ></>
+   <csfile ></>
+   <csinst >"<exefilename>"</>
+   <csuninst >"<exefilename>"</>
+   <csupdate >"<exefilename>"</>
+   <crautorun >0</>
+   <autoicon ></>
+   <multilist >
+      <rows ></>
+   </>
+</>

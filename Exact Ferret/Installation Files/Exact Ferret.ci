@@ -1,0 +1,501 @@
+﻿<project version = 9 civer = 6.1.2 winver = "2.13/6.2.9200" >
+   <autorun >0</>
+   <autoclose >1</>
+   <compname >Kangaroo Standard</>
+   <produrl >http://www.kangaroostandard.com/</>
+   <ver >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\bin\x64\Release\Exact Ferret.exe</>
+   <supurl ></>
+   <updurl ></>
+   <dlgfont >verdana</>
+   <headlogo >default - 1</>
+   <dlgfontsize >s8</>
+   <output >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Dist</>
+   <exename >InstallExactFerret.exe</>
+   <beffile ></>
+   <aftfile ></>
+   <uninclude >0</>
+   <lang >english</>
+   <addlang ></>
+   <selfextr >1</>
+   <instpath ></>
+   <voltype >nolimit</>
+   <volsize ></>
+   <volpattern >disk%i.pak</>
+   <password ></>
+   <progname >Exact Ferret</>
+   <appname >Exact Ferret</>
+   <bl ></>
+   <blurl ></>
+   <unpath >inst</>
+   <unexe >uninstall.exe</>
+   <unlog >uninstall.ini</>
+   <installroot sorttype = 0 >
+      <children >
+         <install id = install expanded = 2 >
+            <children >
+               <_ tag = 0 id = getuser disabled = 0 >
+                  <desc >Apply the original user's username to variables</>
+                  <var >username</>
+                  <vars >appdata,apppath,userpath,desktop,progpath,startup</>
+                  <if ></>
+               </>
+               <_ tag = 0 id = unpack >
+                  <desc >Save the admin installer in temp folder</>
+                  <comptype >default</>
+                  <ratio >r5</>
+                  <solid >1</>
+                  <path >app</>
+                  <custpath ></>
+                  <ifexist >over</>
+                  <if ></>
+                  <srclist >
+                     <rows >
+                        <_ >
+                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Files\InstallExactFerret-admin.exe</>
+                           <recurse >1</>
+                           <justfile >0</>
+                           <emptydir >0</>
+                           <exclude ></>
+                        </>
+                        <_ >
+                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Scripts\SetRunValues.ps1</>
+                           <recurse >1</>
+                           <justfile >0</>
+                           <emptydir >0</>
+                           <exclude ></>
+                        </>
+                        <_ >
+                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Scripts\WaitForUninstaller.ps1</>
+                           <recurse >1</>
+                           <justfile >0</>
+                           <emptydir >0</>
+                           <exclude ></>
+                        </>
+                        <_ >
+                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Scripts\CheckIfCancelled.ps1</>
+                           <recurse >1</>
+                           <justfile >0</>
+                           <emptydir >0</>
+                           <exclude ></>
+                        </>
+                        <_ >
+                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Scripts\WaitForAdminInstaller.ps1</>
+                           <recurse >1</>
+                           <justfile >0</>
+                           <emptydir >0</>
+                           <exclude ></>
+                        </>
+                        <_ >
+                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Scripts\PostInstall.ps1</>
+                           <recurse >1</>
+                           <justfile >0</>
+                           <emptydir >0</>
+                           <exclude ></>
+                        </>
+                        <_ >
+                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Scripts\Uninstall2.exe</>
+                           <recurse >1</>
+                           <justfile >0</>
+                           <emptydir >0</>
+                           <exclude ></>
+                        </>
+                        <_ >
+                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Scripts\Uninstall300.exe</>
+                           <recurse >1</>
+                           <justfile >0</>
+                           <emptydir >0</>
+                           <exclude ></>
+                        </>
+                        <_ >
+                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Scripts\StartExactFerret.ps1</>
+                           <recurse >1</>
+                           <justfile >0</>
+                           <emptydir >0</>
+                           <exclude ></>
+                        </>
+                        <_ >
+                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Scripts\ConfigureExactFerretNow.ps1</>
+                           <recurse >1</>
+                           <justfile >0</>
+                           <emptydir >0</>
+                           <exclude ></>
+                        </>
+                        <_ >
+                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Scripts\ClearTempPath.ps1</>
+                           <recurse >1</>
+                           <justfile >0</>
+                           <emptydir >0</>
+                           <exclude ></>
+                        </>
+                     </>
+                  </>
+                  <varlist >
+                     <rows ></>
+                  </>
+               </>
+               <_ tag = 0 id = run >
+                  <desc >Clear the finished file and others from temp path</>
+                  <path >sys</>
+                  <name >cmd</>
+                  <cmdline >/c powershell -ExecutionPolicy ByPass .\ClearTempPath.ps1 -tempPath '#apppath#'</>
+                  <work >app</>
+                  <defwork ></>
+                  <wait >1</>
+                  <runas >hide</>
+                  <if ></>
+               </>
+               <_ tag = 0 id = regget disabled = 0 >
+                  <desc >Determine if Exact Ferret 2.0 is installed</>
+                  <root >curuser</>
+                  <subkey >SOFTWARE\Microsoft\Windows\CurrentVersion\Run</>
+                  <wow64 >0</>
+                  <reglist >
+                     <rows >
+                        <_ >
+                           <valname >ExactFerret</>
+                           <varname >installed2</>
+                           <defval >0</>
+                        </>
+                     </>
+                  </>
+               </>
+               <_ tag = 0 id = if expanded = 0 disabled = 0 >
+                  <children >
+                     <_ tag = 0 id = message expanded = 0 disabled = 0 >
+                        <children >
+                           <_ tag = 0 id = run >
+                              <desc ></>
+                              <path >app</>
+                              <name >Uninstall2.exe</>
+                              <cmdline ></>
+                              <work >default</>
+                              <defwork ></>
+                              <wait >0</>
+                              <runas >norm</>
+                              <if ></>
+                           </>
+                        </>
+                        <desc >Uninstall Exact Ferret 2.0</>
+                        <type >info</>
+                        <caption >Exact Ferret</>
+                        <text >Setup has detected that you have an older version of Exact Ferret installed. To continue, this version must be removed. Click OK to quit setup and launch the uninstaller.</>
+                        <btns >okcancel</>
+                        <resvar >msgret</>
+                        <msgif >ok</>
+                        <if ></>
+                     </>
+                     <_ tag = 0 id = exit >
+                        <desc >Exit</>
+                        <extype >exit</>
+                        <code >0</>
+                        <msg ></>
+                     </>
+                  </>
+                  <desc >If Exact Ferret 2.0 is installed</>
+                  <else ></>
+                  <condlist >
+                     <rows >
+                        <_ >
+                           <varname >installed2</>
+                           <iftype >notempty</>
+                           <not >0</>
+                           <value ></>
+                           <orand >and</>
+                        </>
+                     </>
+                  </>
+               </>
+               <_ tag = 0 id = regget disabled = 0 >
+                  <desc >Determine if Exact Ferret 3.0.0 is installed</>
+                  <root >locmach</>
+                  <subkey >SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Exact Ferret</>
+                  <wow64 >1</>
+                  <reglist >
+                     <rows >
+                        <_ >
+                           <valname >UninstallString</>
+                           <varname >installed300</>
+                           <defval >0</>
+                        </>
+                     </>
+                  </>
+               </>
+               <_ tag = 0 id = if expanded = 0 disabled = 0 >
+                  <children >
+                     <_ tag = 0 id = message expanded = 2 disabled = 0 >
+                        <children >
+                           <_ tag = 0 id = run >
+                              <desc ></>
+                              <path >app</>
+                              <name >Uninstall300.exe</>
+                              <cmdline ></>
+                              <work >default</>
+                              <defwork ></>
+                              <wait >0</>
+                              <runas >norm</>
+                              <if ></>
+                           </>
+                           <_ tag = 0 id = run >
+                              <desc >Wait for the uninstaller to finish</>
+                              <path >sys</>
+                              <name >cmd</>
+                              <cmdline >/c powershell -ExecutionPolicy ByPass .\WaitForUninstaller.ps1</>
+                              <work >app</>
+                              <defwork ></>
+                              <wait >1</>
+                              <runas >hide</>
+                              <if ></>
+                           </>
+                        </>
+                        <desc >Uninstall Exact Ferret 3.0.0</>
+                        <type >info</>
+                        <caption >Exact Ferret</>
+                        <text >Setup has detected that you have an older version of Exact Ferret installed. To continue, this version must be removed. Click OK to launch the uninstaller.</>
+                        <btns >okcancel</>
+                        <resvar >msgret</>
+                        <msgif >ok</>
+                        <if ></>
+                     </>
+                  </>
+                  <desc >If Exact Ferret 3.0.0 is installed</>
+                  <else ></>
+                  <condlist >
+                     <rows >
+                        <_ >
+                           <varname >installed300</>
+                           <iftype >substr</>
+                           <not >0</>
+                           <value >UninstallExactFerret.exe</>
+                           <orand >and</>
+                        </>
+                     </>
+                  </>
+               </>
+               <_ tag = 0 id = run >
+                  <desc >Run the admin installer</>
+                  <path >app</>
+                  <name >InstallExactFerret-admin.exe</>
+                  <cmdline ></>
+                  <work >default</>
+                  <defwork ></>
+                  <wait >1</>
+                  <runas >norm</>
+                  <if >!#silent#</>
+               </>
+               <_ tag = 0 id = run >
+                  <desc >Run the admin installer silently</>
+                  <path >app</>
+                  <name >InstallExactFerret-admin.exe</>
+                  <cmdline >-silent</>
+                  <work >default</>
+                  <defwork ></>
+                  <wait >1</>
+                  <runas >norm</>
+                  <if >#silent#</>
+               </>
+               <_ tag = 0 id = run >
+                  <desc >Wait for the admin installer to finish</>
+                  <path >sys</>
+                  <name >cmd</>
+                  <cmdline >/c powershell -ExecutionPolicy ByPass .\WaitForAdminInstaller.ps1</>
+                  <work >app</>
+                  <defwork ></>
+                  <wait >1</>
+                  <runas >hide</>
+                  <if ></>
+               </>
+               <_ tag = 0 id = run >
+                  <desc >Check if admin installer was cancelled</>
+                  <path >sys</>
+                  <name >cmd</>
+                  <cmdline >/c powershell -ExecutionPolicy ByPass .\CheckIfCancelled.ps1 -tempPath '#apppath#'</>
+                  <work >app</>
+                  <defwork ></>
+                  <wait >1</>
+                  <runas >hide</>
+                  <if ></>
+               </>
+               <_ tag = 0 id = regset disabled = 1 >
+                  <desc >Run Exact Ferret at logon</>
+                  <root >curuser</>
+                  <subkey >SOFTWARE\Microsoft\Windows\CurrentVersion\Run</>
+                  <wow64 >0</>
+                  <reglist >
+                     <rows >
+                        <_ >
+                           <valname >Exact Ferret</>
+                           <regtype >str</>
+                           <value >"#setuppath#\Exact Ferret Tray Icon.exe"</>
+                        </>
+                     </>
+                  </>
+               </>
+               <_ tag = 0 id = regset disabled = 1 >
+                  <desc >Run Exact Ferret -? to reset shortcut keys at logon</>
+                  <root >curuser</>
+                  <subkey >SOFTWARE\Microsoft\Windows\CurrentVersion\Run</>
+                  <wow64 >0</>
+                  <reglist >
+                     <rows >
+                        <_ >
+                           <valname >Exact Ferret Shortcut Reset</>
+                           <regtype >str</>
+                           <value >"#setuppath#\Exact Ferret.exe" -?</>
+                        </>
+                     </>
+                  </>
+               </>
+               <_ tag = 0 id = run disabled = 0 >
+                  <desc >Set registry Run values</>
+                  <path >sys</>
+                  <name >cmd</>
+                  <cmdline >/c powershell -ExecutionPolicy ByPass .\SetRunValues.ps1 -tempPath '#apppath#'</>
+                  <work >app</>
+                  <defwork ></>
+                  <wait >1</>
+                  <runas >hide</>
+                  <if ></>
+               </>
+               <_ tag = 0 id = run disabled = 0 >
+                  <desc >Start Exact Ferret</>
+                  <path >sys</>
+                  <name >cmd</>
+                  <cmdline >/c powershell -ExecutionPolicy ByPass .\StartExactFerret.ps1 -tempPath '#apppath#'</>
+                  <work >app</>
+                  <defwork ></>
+                  <wait >0</>
+                  <runas >hide</>
+                  <if ></>
+               </>
+               <_ tag = 0 id = run disabled = 0 >
+                  <desc >Configure Exact Ferret now</>
+                  <path >sys</>
+                  <name >cmd</>
+                  <cmdline >/c powershell -ExecutionPolicy ByPass .\ConfigureExactFerretNow.ps1 -tempPath '#apppath#'</>
+                  <work >app</>
+                  <defwork ></>
+                  <wait >0</>
+                  <runas >hide</>
+                  <if >!#silent#</>
+               </>
+               <_ tag = 0 id = run >
+                  <desc >Run the post-install script to open the help file, etc.</>
+                  <path >sys</>
+                  <name >cmd</>
+                  <cmdline >/c powershell -ExecutionPolicy ByPass .\PostInstall.ps1 -tempPath '#apppath#'</>
+                  <work >app</>
+                  <defwork ></>
+                  <wait >0</>
+                  <runas >hide</>
+                  <if ></>
+               </>
+            </>
+            <icofile >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Icons\Tpdkdesign.net-Refresh-Cl-System-Install-1.ico</>
+            <resfile ></>
+            <leftimg >install - 1</>
+            <caption ></>
+            <verinfo >1</>
+            <noadmin >1</>
+            <selfdelete >0</>
+         </>
+      </>
+   </>
+   <uninstallroot sorttype = 0 >
+      <children >
+         <uninstall id = uninstall expanded = 2 >
+            <children >
+               <_ id = dlguconf >
+                  <desc ></>
+                  <buttons >c</>
+                  <design >left</>
+                  <headlogo ></>
+                  <varlist >
+                     <rows ></>
+                  </>
+                  <head ></>
+                  <headtext ></>
+                  <dlgtext ></>
+                  <if ></>
+               </>
+               <_ id = dlguprog expanded = 2 >
+                  <children >
+                     <_ id = unprocess >
+                        <desc ></>
+                     </>
+                  </>
+                  <desc ></>
+                  <buttons >nc</>
+                  <design >left</>
+                  <headlogo ></>
+                  <varlist >
+                     <rows ></>
+                  </>
+                  <auto >1</>
+                  <head ></>
+                  <headtext ></>
+                  <dlgtext ></>
+                  <if ></>
+               </>
+               <_ id = dlgundel >
+                  <desc ></>
+                  <buttons >nc</>
+                  <design >left</>
+                  <headlogo ></>
+                  <varlist >
+                     <rows ></>
+                  </>
+                  <head ></>
+                  <headtext ></>
+                  <dlgtext ></>
+                  <if ></>
+               </>
+               <_ id = dlgufin >
+                  <desc ></>
+                  <buttons >nc</>
+                  <design >left</>
+                  <headlogo ></>
+                  <varlist >
+                     <rows ></>
+                  </>
+                  <head ></>
+                  <headtext ></>
+                  <dlgtext ></>
+                  <feedback ></>
+                  <if ></>
+               </>
+            </>
+            <unicon >uninstall</>
+            <unresfile ></>
+            <leftimg >uninstall - 1</>
+            <caption ></>
+            <noadmin >0</>
+         </>
+      </>
+   </>
+   <phone ></>
+   <shfolder ></>
+   <headcol ></>
+   <headtext ></>
+   <headimg ></>
+   <stretchback >0</>
+   <silentpar >-silent</>
+   <custfont ></>
+   <upinclude >0</>
+   <uppath >inst</>
+   <upexe >update.exe</>
+   <upurl ></>
+   <upxml >update.ini</>
+   <upredir ></>
+   <ignnotfound >0</>
+   <tozip >0</>
+   <zipfile ></>
+   <csfile ></>
+   <csinst >"<exefilename>"</>
+   <csuninst >"<exefilename>"</>
+   <csupdate >"<exefilename>"</>
+   <crautorun >0</>
+   <autoicon ></>
+   <multilist >
+      <rows ></>
+   </>
+</>

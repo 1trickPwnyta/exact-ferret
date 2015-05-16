@@ -1,0 +1,189 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Exact_Ferret.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="AUTO_UPDATE" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="INTERVAL_MINUTES" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">15</Value>
+    </Setting>
+    <Setting Name="LOG_FILE_LOCATION" Type="System.String" Scope="User">
+      <Value Profile="(Default)">%USERPROFILE%\Exact Ferret\Logs\ef.log</Value>
+    </Setting>
+    <Setting Name="LOG_ROLLOVER_KBYTES" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1000</Value>
+    </Setting>
+    <Setting Name="LOG_LEVEL" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="IMAGE_LOCATION" Type="System.String" Scope="User">
+      <Value Profile="(Default)">%USERPROFILE%\Exact Ferret\Pictures</Value>
+    </Setting>
+    <Setting Name="CHANGE_WALLPAPER" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="CHANGE_LOCK_SCREEN" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="MAX_OLD_IMAGES" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">99</Value>
+    </Setting>
+    <Setting Name="MINIMUM_IMAGE_WIDTH" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1024</Value>
+    </Setting>
+    <Setting Name="MINIMUM_IMAGE_HEIGHT" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">768</Value>
+    </Setting>
+    <Setting Name="MINIMUM_IMAGE_RATIO" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.2</Value>
+    </Setting>
+    <Setting Name="MAXIMUM_IMAGE_RATIO" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.8</Value>
+    </Setting>
+    <Setting Name="SEARCH_TERM_MODIFIER" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DOWNLOAD_ATTEMPTS" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="SAFE_SEARCH" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="COLORS_IN_IMAGE" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="TYPE_OF_IMAGE" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="SEARCH_DOMAIN" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="WALLPAPER_STYLE" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="MAXIMUM_IMAGE_WIDTH" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">999999</Value>
+    </Setting>
+    <Setting Name="MAXIMUM_IMAGE_HEIGHT" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">999999</Value>
+    </Setting>
+    <Setting Name="DICTIONARY_FILE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">%EXACTFERRET%\dictionary.txt</Value>
+    </Setting>
+    <Setting Name="HTTP_REQUEST_TIMEOUT" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="LOG_RETENTION_DAYS" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="INTERVAL_SECONDS" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="BLOCKED_IMAGES" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" /&gt;</Value>
+    </Setting>
+    <Setting Name="BLOCKED_DOMAINS" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" /&gt;</Value>
+    </Setting>
+    <Setting Name="GOOGLE_API_KEY" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="API_LIMIT_WARNING" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="CYCLE_AT_API_LIMIT" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SUNDAY_START" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">2014-04-03</Value>
+    </Setting>
+    <Setting Name="SUNDAY_STOP" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">04/03/2014 23:59:59</Value>
+    </Setting>
+    <Setting Name="MONDAY_START" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">2014-04-03</Value>
+    </Setting>
+    <Setting Name="MONDAY_STOP" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">04/03/2014 23:59:59</Value>
+    </Setting>
+    <Setting Name="TUESDAY_START" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">2014-04-03</Value>
+    </Setting>
+    <Setting Name="TUESDAY_STOP" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">04/03/2014 23:59:59</Value>
+    </Setting>
+    <Setting Name="WEDNESDAY_START" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">2014-04-03</Value>
+    </Setting>
+    <Setting Name="WEDNESDAY_STOP" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">04/03/2014 23:59:59</Value>
+    </Setting>
+    <Setting Name="THURSDAY_START" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">2014-04-03</Value>
+    </Setting>
+    <Setting Name="THURSDAY_STOP" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">04/03/2014 23:59:59</Value>
+    </Setting>
+    <Setting Name="FRIDAY_START" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">2014-04-03</Value>
+    </Setting>
+    <Setting Name="FRIDAY_STOP" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">04/03/2014 23:59:59</Value>
+    </Setting>
+    <Setting Name="SATURDAY_START" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">2014-04-03</Value>
+    </Setting>
+    <Setting Name="SATURDAY_STOP" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">04/03/2014 23:59:59</Value>
+    </Setting>
+    <Setting Name="DO_NOT_OVERWRITE_BLOCKED_PICTURES" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SETTINGS_SCHEDULE" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DONT_RUN_ON_BATTERY" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="BING_ACCESS_TOKEN" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SINGLE_API_LIMIT_WARNING" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SEARCH_ENGINE_ORDER" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;Google&lt;/string&gt;
+  &lt;string&gt;Bing&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="PANIC_IMAGE" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="QUICK_RUN_SHORTCUT" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="PANIC_SHORTCUT" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">16</Value>
+    </Setting>
+    <Setting Name="SETTINGS_SHORTCUT" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="SHOW_CAPTION" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SHOW_DOMAIN" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SHOW_TERM" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="DESKTOP_LABEL_LOCATION" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

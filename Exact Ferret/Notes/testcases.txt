@@ -1,0 +1,27 @@
+﻿Test Cases
+
+Definitions:
+Basic functionality - includes opening the settings window, performing a quick run, the background process being able to 
+	download a picture and change the desktop and lock screen backgrounds
+
+Installation
+	Install with all defaults
+	Test basic functionality
+	Uninstall
+	Install previous version
+	Install new version on top
+	Ensure all traces of old version are gone, and test basic functionality
+	Install on top of current installation
+	Test basic functionality
+	Uninstall
+	Make sure all traces of Exact Ferret are gone
+	Install
+Features
+	Make sure all newly added features work
+Tray Icon
+	Verify start, stop, quick run, settings
+	Use Exit
+	Verify all Exact Ferret processes are stopped (except settings window)
+	Open settings window, start Exact Ferret, verify tray icon comes back
+Updates
+	Make sure automatic updates work

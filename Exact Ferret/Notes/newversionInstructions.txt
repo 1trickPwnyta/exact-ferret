@@ -1,0 +1,12 @@
+﻿1. Update the help file.
+2. Update the information in the NewVersionBox.cs.
+3. Increment the DISCRETE_SOFTWARE_VERSION constant in UpdateManager.cs.
+4. Adjust the software version in AssemblyInfo.cs.
+5. Uncomment the code in Desktop.cs for Windows 8 (if commented)
+6. Check for updates to Image Magick (use 32-bit .zip version).
+7. Build the Release version of the software.
+8. Build the installer file.
+9. Perform testing.
+10. Set the installer file at https://exactferret.kangaroostandard.com/update.
+11. Set the version number at https://exactferret.kangaroostandard.com/version to match the new DISCRETE_SOFTWARE_VERSION.
+12. Update the software at http://games.kangaroostandard.com with the new version.

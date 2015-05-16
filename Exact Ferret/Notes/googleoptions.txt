@@ -1,0 +1,33 @@
+as_st=y&tbm=isch&hl=en&as_q=banana&as_epq=&as_oq=&as_eq=&cr=&as_sitesearch=&safe=active normal
+
+as_st=y&tbm=isch&hl=en&as_q=banana&as_epq=&as_oq=&as_eq=&cr=&as_sitesearch=&safe=images safesearch off
+
+as_st=y&tbm=isch&hl=en&as_q=banana&as_epq=&as_oq=&as_eq=&cr=&as_sitesearch=&safe=images&tbs=isz:lt,islt:xga 1024 768
+as_st=y&tbm=isch&hl=en&as_q=banana&as_epq=&as_oq=&as_eq=&cr=&as_sitesearch=&safe=images&tbs=isz:lt,islt:svga 800 600
+as_st=y&tbm=isch&hl=en&as_q=banana&as_epq=&as_oq=&as_eq=&cr=&as_sitesearch=&safe=images&tbs=isz:lt,islt:vga 640 480
+as_st=y&tbm=isch&hl=en&as_q=banana&as_epq=&as_oq=&as_eq=&cr=&as_sitesearch=&safe=images&tbs=isz:lt,islt:qsvga 400 300
+
+as_st=y&tbm=isch&hl=en&as_q=banana&as_epq=&as_oq=&as_eq=&cr=&as_sitesearch=&safe=images&tbs=iar:t tall
+as_st=y&tbm=isch&hl=en&as_q=banana&as_epq=&as_oq=&as_eq=&cr=&as_sitesearch=&safe=images&tbs=iar:s square
+as_st=y&tbm=isch&hl=en&as_q=banana&as_epq=&as_oq=&as_eq=&cr=&as_sitesearch=&safe=images&tbs=iar:w wide
+as_st=y&tbm=isch&hl=en&as_q=banana&as_epq=&as_oq=&as_eq=&cr=&as_sitesearch=&safe=images&tbs=iar:xw panoramic
+
+as_st=y&tbm=isch&hl=en&as_q=banana&as_epq=&as_oq=&as_eq=&cr=&as_sitesearch=&safe=images&tbs=ic:color full color
+as_st=y&tbm=isch&hl=en&as_q=banana&as_epq=&as_oq=&as_eq=&cr=&as_sitesearch=&safe=images&tbs=ic:gray black and white
+as_st=y&tbm=isch&hl=en&as_q=banana&as_epq=&as_oq=&as_eq=&cr=&as_sitesearch=&safe=images&tbs=ic:specific,isc:red this color (red)
+as_st=y&tbm=isch&hl=en&as_q=banana&as_epq=&as_oq=&as_eq=&cr=&as_sitesearch=&safe=images&tbs=ic:specific,isc:teal this color (teal)
+other options for this color: orange, yellow, green, blue, purple, pink, white, gray, black, brown
+
+as_st=y&tbm=isch&hl=en&as_q=banana&as_epq=&as_oq=&as_eq=&cr=&as_sitesearch=&safe=images&tbs=itp:face face
+as_st=y&tbm=isch&hl=en&as_q=banana&as_epq=&as_oq=&as_eq=&cr=&as_sitesearch=&safe=images&tbs=itp:photo photo
+as_st=y&tbm=isch&hl=en&as_q=banana&as_epq=&as_oq=&as_eq=&cr=&as_sitesearch=&safe=images&tbs=itp:clipart clip art
+as_st=y&tbm=isch&hl=en&as_q=banana&as_epq=&as_oq=&as_eq=&cr=&as_sitesearch=&safe=images&tbs=itp:lineart line drawing
+as_st=y&tbm=isch&hl=en&as_q=banana&as_epq=&as_oq=&as_eq=&cr=&as_sitesearch=&safe=images&tbs=itp:animated animated
+
+as_st=y&tbm=isch&hl=en&as_q=banana&as_epq=&as_oq=&as_eq=&cr=&as_sitesearch=&safe=images&tbs=ift:png png
+as_st=y&tbm=isch&hl=en&as_q=banana&as_epq=&as_oq=&as_eq=&cr=&as_sitesearch=&safe=images&tbs=ift:gif gif
+as_st=y&tbm=isch&hl=en&as_q=banana&as_epq=&as_oq=&as_eq=&cr=&as_sitesearch=&safe=images&tbs=ift:bmp bmp
+
+as_st=y&tbm=isch&hl=en&as_q=banana&as_epq=&as_oq=&as_eq=&cr=&as_sitesearch=kangaroostandard.com&safe=images sitesearch
+
+as_st=y&tbm=isch&hl=en&as_q=banana&as_epq=&as_oq=&as_eq=&cr=&as_sitesearch=&safe=images&tbs=isz:lt,islt:svga,iar:w 800 600 wide

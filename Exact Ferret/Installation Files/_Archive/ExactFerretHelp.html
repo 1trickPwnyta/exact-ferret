@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<title>Exact Ferret - Help</title>
+		<meta charset="utf-8" />
+		<style>
+      html {
+      background-color: #614433;
+      margin: 0px;
+      padding: 0px;
+      }
+
+      body {
+      background-color: #FFF0E0;
+      margin: 0px auto;
+      padding: 8px 24px;
+      width: 800px;
+      font-family: sans-serif;
+      }
+
+      a {
+      color: #614433;
+      font-weight: bold;
+      text-decoration: none;
+      }
+
+      a:hover {
+      background-color: #614433;
+      color: white;
+      border-radius: 4px 4px 4px;
+      }
+
+      h1 {
+      font-size: 32px;
+      border-bottom: 6px double black;
+      }
+
+      h2 {
+      font-size: 20px;
+      border-bottom: 1px solid black;
+      margin-top: 32px;
+      }
+
+      h3 {
+      font-size: 16px;
+      margin-bottom: 2px;
+      text-decoration: underline;
+      }
+      
+      h4 {
+      font-size: 14px;
+      margin-bottom: 0px;
+      }
+
+      p {
+      margin-top: 2px;
+      }
+
+      em {
+      font-family: monospace;
+      font-style: inherit;
+      }
+
+      strong {
+      color: #c74949;
+      }
+
+      div.question {
+      font-weight: bold;
+      }
+
+      div.answer {
+      margin-bottom: 8px;
+      font-style: italic;
+      }
+    </style>
+	</head>
+	<body>
+		<h1>Exact Ferret</h1>
+		
+		<h2>Contents:</h2>
+		<p>
+			<ol>
+				<li><a href="#Introduction">Introduction</a></li>
+				<li><a href="#Requirements">System Requirements</a></li>
+				<li><a href="#History">Version History</a></li>
+				<li><a href="#Run">How to Run Exact Ferret</a></li>
+				<li><a href="#Settings">Settings</a></li>
+				<li><a href="#Dictionary">The Dictionary File</a></li>
+				<li><a href="#FAQ">Frequently Asked Questions (FAQ)</a></li>
+			</ol>
+		</p>
+		
+		<h2 id="Introduction">Introduction</h2>
+		<p>
+			Welcome to Exact Ferret, and thank you for downloading and installing! If you 
+			don't know already, Exact Ferret is a computer program that takes control of 
+			your desktop background (and/or lock screen background if you desire) and 
+			displays completely random images downloaded from the Internet.
+		</p>
+		<p>
+			As of Exact Ferret version 2.0, all the details of setting up Exact Ferret are 
+			taken care of automatically when you install. In fact, right after you 
+			installed Exact Ferret, you should have seen your desktop background change. 
+			This means that it is working! Also as of version 2.0, there are many ways to 
+			customize Exact Ferret (see <a href="#Settings">Settings</a> below for 
+			details). 
+		</p>
+		
+		<h2 id="Requirements">System Requirements</h2>
+		<p>
+			There are no real hardware requirements for running Exact Ferret. However, 
+			there are a few software requirements. If your computer does not meet these 
+			requirements, you will not be allowed to install Exact Ferret.
+			<ul>
+				<li>64-bit Windows 7 operating system or higher</li>
+				<li>Microsoft .NET Framework v4.0.30319</li>
+				<li><a href="http://www.imagemagick.org/script/index.php" target="newtab">Image Magick</a> image editor (only required for Windows 7)</li>
+			</ul>
+		</p>
+		
+		<h2 id="History">Version History</h2>
+    <h3>3.0.0 (02-21-2014)</h3>
+    <p>
+      The initial release of Exact Ferret 3.0. Exact Ferret was rewritten in C# .NET for better Windows 
+      operating system integration. The settings window was completely redesigned and several new 
+      features were added:
+        <ul>
+          <li>All settings can now be imported and exported so that you can switch between different 
+          settings easily.</li>
+          <li>The Exact Ferret background process can now be started and stopped from the settings window.</li>
+          <li>Environment variables can be used in file system paths (like the log folder path).</li>
+          <li>The time limit for HTTP requests can be controlled.</li>
+          <li>The wallpaper style (Center, Stretch, etc) can be controlled, or Exact Ferret can determine 
+          a style automatically.</li>
+          <li>You can choose a different dictionary file instead of using the default.</li>
+          <li>Image size maximums can be specified.</li>
+          <li>Google search options for image colors and types can be used.</li>
+          <li>Log level options have changed. Trace no longer outputs the Google search results, and new 
+          levels Warning and Results have been added. Results outputs everything, including Google search 
+          results.</li>
+          <li>HTTP proxies no longer need to be specified. Exact Ferret uses the system proxy settings as 
+          defined in Control Panel &gt; Internet Options.</li>
+          <li>Windows 8 lock screen background changes work more reliably.</li>
+        </ul>
+    </p>
+		<h3>2.0.1 (02-04-2014)</h3>
+		<p>
+			General security improvements, fixed bug in uninstallation process that could prevent 
+			automatic updates from working correctly when re-installed.
+		</p>
+    <h3>2.0.0 (01-18-2014)</h3>
+    <p>
+      The initial release of Exact Ferret 2.0.
+    </p>
+		
+		<h2 id="Run">How to Run Exact Ferret</h2>
+		<p>
+			There are two ways to run Exact Ferret. The first way is to simply do nothing. 
+			After you install Exact Ferret, it starts running immediately. You should see 
+			your desktop wallpaper change right after installing, assuming everything is 
+			working. Exact Ferret will continue to run in the background, changing your 
+			desktop wallpaper every 15 minutes by default.
+		</p>
+		<p>
+			The other way to run Exact Ferret is to use the Quick Run shortcut. The Quick 
+			Run shortcut changes your background immediately, and you can run it whenever 
+			you want. For example, if Exact Ferret running in the background changes your 
+			background to something appalling, you can use the Quick Run shortcut to change 
+			your background again right away. The Quick Run shortcut can be found at Start 
+			&gt; All apps &gt; Exact Ferret &gt; Exact Ferret - Quick Run.
+		</p>
+		
+		<h2 id="Settings">Settings</h2>
+		<p>
+			As of Exact Ferret version 2.0, there are many settings that you can configure 
+			in order to customize the behavior of Exact Ferret. To access the settings for 
+			Exact Ferret, go to Start &gt; All apps &gt; Exact Ferret &gt; Exact Ferret.
+		</p>
+    <h3>General Settings</h3>
+    <h4>Start Exact Ferret when I log into Windows</h4>
+    <p>
+      This will automatically start the Exact Ferret background process when you log 
+      into Windows. Without this option enabled, you will have to start Exact Ferret manually.
+    </p>
+		<h4>Install updates automatically</h4>
+		<p>
+			Selecting this option will tell Exact Ferret to check online for updates to 
+			itself. Exact Ferret will check for updates every time it changes your 
+			background. If an update is available, you will be prompted to install it.
+		</p>
+    <h3>Behavior Settings</h3>
+		<h4>Run Exact Ferret every ? minutes</h4>
+		<p>
+			This tells Exact Ferret how many minutes to wait between each time it changes 
+			your background. Note that if you set this to 0, Exact Ferret will continuously 
+			change your background.
+		</p>
+    <h4>Save picture files to</h4>
+    <p>
+      This setting tells Exact Ferret what folder to save downloaded image files in.
+      You can take a look in this folder to see the last image Exact Ferret
+      downloaded as well as older image files that were already used.
+    </p>
+    <h4>Number of old pictures to keep before deleting</h4>
+    <p>
+      When Exact Ferret downloads an image file from the Internet, it stores that
+      file in a certain folder. This setting tells Exact Ferret how many previously
+      downloaded image files it should keep in that folder. If there are too many
+      images in the folder, Exact Ferret will delete the oldest ones.
+    </p>
+    <h4>HTTP request timeout</h4>
+    <p>
+      Sets a time limit in seconds to wait on an HTTP request before giving up and 
+      moving on. If your network is particularly slow, increase this setting.
+    </p>
+    <h4>Number of download attempts before giving up</h4>
+    <p>
+      Sometimes Exact Ferret will encounter an error when it tries to download an
+      image from the Internet. When it does, it tries to download a different image.
+      This setting tells Exact Ferret how many times to retry before giving up. This
+      prevents Exact Ferret from getting stuck trying to download images and getting
+      errors every single time. This would be the case if you do not have an Internet
+      connection, for example.
+    </p>
+    <h4>Change desktop wallpaper</h4>
+    <p>
+      There are two backgrounds that Exact Ferret can change: Your desktop background
+      and your lock screen background (this is the screen you see when you are
+      logging into your computer, or when you lock it). This setting tells Exact Ferret 
+      to change your desktop wallpaper. You may additionally specify the wallpaper 
+      style (Stretch, Tile, etc), or select Automatic. When Automatic is selected, Exact 
+      Ferret determines the best style to use for each picture.
+    </p>
+    <h4>Change lock screen background</h4>
+    <p>
+      There are two backgrounds that Exact Ferret can change: Your desktop background
+      and your lock screen background (this is the screen you see when you are
+      logging into your computer, or when you lock it). This setting tells Exact Ferret
+      to change your lock screen background.
+    </p>
+    <h3>Search Settings</h3>
+    <h4>Dictionary file</h4>
+    <p>
+      Tells Exact Ferret where to find the dictionary file. For more information about 
+      the dictionary file, see <a href="#Dictionary">The Dictionary File</a>.
+    </p>
+    <h4>Search term modifier</h4>
+    <p>
+      Exact Ferret uses Google Image Search to search for images on the Internet.
+      Words you put in this setting will be added to the end of each search term
+      Exact Ferret uses. You can use this to &quot;bias&quot; the downloaded images
+      toward a certain theme. For example, in the month of December, you can set this
+      to <em>christmas</em>. This will make it more likely that Exact Ferret will
+      download Christmas-themed images.
+    </p>
+		<h4>Image size range</h4>
+		<p>
+			This setting specifies the minimum and maximum size of downloaded images, in 
+      pixels. Exact Ferret will not download any images outside this range.
+		</p>
+		<h4>Minimum width:height ratio range</h4>
+		<p>
+			An image's width:height ratio is the number you get when you divide its width 
+			by its height. For example, a standard 800x600 pixel image has a width:height 
+			ratio of 1.3. You can use this setting to make sure that Exact Ferret only 
+			downloads images which have a similar width:height ratio to your screen.
+		</p>
+		<h4>Colors in image</h4>
+		<p>
+			This setting uses Google's image color search setting to search for images 
+      of a certain color.
+		</p>
+    <h4>Type of image</h4>
+    <p>
+      This setting uses Google's image type search setting to search for images
+      of a certain type, such as photos or clip art.
+    </p>
+		<h4>Use Google's safe search feature</h4>
+		<p>
+			Exact Ferret uses Google Image Search to search for images to download. Select 
+			this option to turn on Google's Safe Search option, which helps prevent naughty 
+			images from appearing in search results, and thus helps prevent Exact Ferret 
+			from using such images as your background.
+		</p>
+		<h4>Search domain</h4>
+		<p>
+			This setting uses Google's domain search option to only search a single 
+			Internet domain (such as www.flickr.com). This setting is very restrictive, so 
+			don't be surprised if Exact Ferret can't find any images to download after you 
+			set this option.
+		</p>
+    <h3>Log Settings</h3>
+    <h4>Log file location</h4>
+    <p>
+      Exact Ferret keeps track of everything it does in the log file. This setting
+      tells Exact Ferret where the log file is. If you ever need to troubleshoot a
+      problem with Exact Ferret, the log file is a good place to look. It is also
+      helpful to look at the log to figure out where Exact Ferret downloaded an image
+      from, or what it searched the Internet for in order to find that image.
+    </p>
+    <h4>Log file rolls over at ? KB</h4>
+    <p>
+      This setting tells Exact Ferret when to stop writing information in the log
+      file and start a new log file. Setting a limit here prevents log files from
+      getting too large (a log file that is too large would be very difficult for
+      you to open in a program such as Notepad). If you don't know what a KB is,
+      just leave this setting at the default. It's fine.
+    </p>
+    <h4>Log level</h4>
+    <p>
+      This setting controls what kind of information is written into the log file.
+      If you are troubleshooting a problem with Exact Ferret and the normal
+      information in the log isn't enough to help you narrow down the problem, you
+      can try setting this to Trace or Results. Results will log the maximum 
+      information. Always be sure to set this back to something else, like Info, 
+      when you're done, though. Leaving this setting on Results, or even Trace, 
+      generates <strong>a lot</strong> of information in the log file and will start 
+      to consume a lot of disk space.
+    </p>
+    <h3>Other Options</h3>
+    <h4>Import and export settings</h4>
+    <p>
+      From the File menu, you can export your current settings to a file. Then you can 
+      change your settings however you want, and later you can import your old settings 
+      back from the file. This allows you to configure Exact Ferret in several different 
+      ways and switch between them easily.
+    </p>
+		
+		<h2 id="Dictionary">The Dictionary File</h2>
+		<p>
+			The dictionary file is a text file that Exact Ferret uses to come up with 
+			things to search the Internet for. Exact Ferret picks a random word from the 
+			dictionary file and uses it as a Google Image Search to find images. The 
+			included dictionary file has 80,000+ words in it. You can add more (such as 
+			names of people or places) if you'd like. You can also remove some. You can 
+			even replace the entire contents of the dictionary file with a totally new 
+			set of words or phrases that you want Exact Ferret to use. If you are 
+			interested in this, you can find the dictionary file in Exact Ferret's 
+			installation directory. It is called <em>dictionary.txt</em>. If you do not 
+      want to modify the original dictionary file, you can instead create your own 
+      dictionary file and tell Exact Ferret to use it instead (in the settings window).
+		</p>
+		
+		<h2 id="FAQ">Frequently Asked Questions (FAQ)</h2>
+    <div class="question">
+      Q: Will Exact Ferret damage my computer or give me viruses?
+    </div>
+    <div class="answer">
+      A: Yes, of course. But that's what you get for ignoring the Windows warning about 
+      unverified software. Actually, no, Exact Ferret will not hurt your computer. It 
+      is okay to ignore any warnings about the software. The most dangerous thing 
+      Exact Ferret does is download and execute installer files for automatic updates. 
+      However, this is safe because the download is secure and the identity of the 
+      update server is checked to ensure you are downloading from a safe source. Also, 
+      please note that image files downloaded from the Internet cannot harm your computer 
+      either. And just in case some goon out there posts an "image" which is really an 
+      executable virus, there is no need to worry because Exact Ferret will not 
+      execute it. In fact, if Exact Ferret determines the file to not be a valid image 
+      file, it will delete it.
+    </div>
+    <div class="question">
+      Q: My background isn't changing! Why isn't it working?
+    </div>
+    <div class="answer">
+      A: First, check to make sure Exact Ferret is running (you can see this in the settings 
+      window). Then, again in the settings window, make sure Exact Ferret is configured to 
+      set the background you are concerned about. If everything looks good, check the log file 
+      (you can find the location of the log file in the settings window). If the log file has 
+      any errors, there may be some operating system changes you need to make in order to 
+      get Exact Ferret to work (like maybe enabling your Internet connection). If you still 
+      can't get it to work, set your log level to Results, perform a Quick Run, and send an email 
+      with your latest log file to <a href="mailto:danielpace6@gmail.com&subject=Exact Ferret">
+      danielpace6@gmail.com</a>.
+    </div>
+	</body>
+</html>
