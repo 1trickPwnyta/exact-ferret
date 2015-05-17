@@ -23,7 +23,7 @@ namespace Exact_Ferret.Settings_Classes
         public const string EXACT_FERRET_EXECUTABLE_NAME = "Exact Ferret.exe";
         public const string TRAY_ICON_EXECUTABLE_NAME = "Exact Ferret Tray Icon.exe";
         public const string METADATA_EXECUTABLE_NAME = "JpegMetaData.exe";
-        public const string HELP_FILE_PATH = "http://exactferret.kangaroostandard.com/help/";
+        public const string HELP_FILE_PATH = "https://www.kangaroostandard.com/ExactFerret/help/";
 
         private const string REGISTRY_RUN_PATH = "Software\\Microsoft\\Windows\\CurrentVersion\\Run";
         private const string REGISTRY_RUN_VALUE_NAME = "Exact Ferret";
