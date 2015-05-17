@@ -3,13 +3,13 @@
    <autoclose >1</>
    <compname >Kangaroo Standard</>
    <produrl >http://www.kangaroostandard.com/</>
-   <ver >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\bin\x64\Release\Exact Ferret.exe</>
+   <ver >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\bin\x64\Release\Exact Ferret.exe</>
    <supurl ></>
    <updurl ></>
    <dlgfont >verdana</>
    <headlogo >default - 1</>
    <dlgfontsize >s8</>
-   <output >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Dist</>
+   <output >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\Installation Files\Dist</>
    <exename >InstallExactFerret.exe</>
    <beffile ></>
    <aftfile ></>
@@ -51,77 +51,77 @@
                   <srclist >
                      <rows >
                         <_ >
-                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Files\InstallExactFerret-admin.exe</>
+                           <filename >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\Installation Files\Files\InstallExactFerret-admin.exe</>
                            <recurse >1</>
                            <justfile >0</>
                            <emptydir >0</>
                            <exclude ></>
                         </>
                         <_ >
-                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Scripts\SetRunValues.ps1</>
+                           <filename >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\Installation Files\Scripts\SetRunValues.ps1</>
                            <recurse >1</>
                            <justfile >0</>
                            <emptydir >0</>
                            <exclude ></>
                         </>
                         <_ >
-                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Scripts\WaitForUninstaller.ps1</>
+                           <filename >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\Installation Files\Scripts\WaitForUninstaller.ps1</>
                            <recurse >1</>
                            <justfile >0</>
                            <emptydir >0</>
                            <exclude ></>
                         </>
                         <_ >
-                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Scripts\CheckIfCancelled.ps1</>
+                           <filename >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\Installation Files\Scripts\CheckIfCancelled.ps1</>
                            <recurse >1</>
                            <justfile >0</>
                            <emptydir >0</>
                            <exclude ></>
                         </>
                         <_ >
-                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Scripts\WaitForAdminInstaller.ps1</>
+                           <filename >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\Installation Files\Scripts\WaitForAdminInstaller.ps1</>
                            <recurse >1</>
                            <justfile >0</>
                            <emptydir >0</>
                            <exclude ></>
                         </>
                         <_ >
-                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Scripts\PostInstall.ps1</>
+                           <filename >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\Installation Files\Scripts\PostInstall.ps1</>
                            <recurse >1</>
                            <justfile >0</>
                            <emptydir >0</>
                            <exclude ></>
                         </>
                         <_ >
-                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Scripts\Uninstall2.exe</>
+                           <filename >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\Installation Files\Scripts\Uninstall2.exe</>
                            <recurse >1</>
                            <justfile >0</>
                            <emptydir >0</>
                            <exclude ></>
                         </>
                         <_ >
-                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Scripts\Uninstall300.exe</>
+                           <filename >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\Installation Files\Scripts\Uninstall300.exe</>
                            <recurse >1</>
                            <justfile >0</>
                            <emptydir >0</>
                            <exclude ></>
                         </>
                         <_ >
-                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Scripts\StartExactFerret.ps1</>
+                           <filename >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\Installation Files\Scripts\StartExactFerret.ps1</>
                            <recurse >1</>
                            <justfile >0</>
                            <emptydir >0</>
                            <exclude ></>
                         </>
                         <_ >
-                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Scripts\ConfigureExactFerretNow.ps1</>
+                           <filename >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\Installation Files\Scripts\ConfigureExactFerretNow.ps1</>
                            <recurse >1</>
                            <justfile >0</>
                            <emptydir >0</>
                            <exclude ></>
                         </>
                         <_ >
-                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Scripts\ClearTempPath.ps1</>
+                           <filename >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\Installation Files\Scripts\ClearTempPath.ps1</>
                            <recurse >1</>
                            <justfile >0</>
                            <emptydir >0</>
@@ -390,7 +390,7 @@
                   <if ></>
                </>
             </>
-            <icofile >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Icons\Tpdkdesign.net-Refresh-Cl-System-Install-1.ico</>
+            <icofile >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\Installation Files\Icons\Tpdkdesign.net-Refresh-Cl-System-Install-1.ico</>
             <resfile ></>
             <leftimg >install - 1</>
             <caption ></>

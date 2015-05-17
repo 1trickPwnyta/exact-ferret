@@ -3,13 +3,13 @@
    <autoclose >1</>
    <compname >Kangaroo Standard</>
    <produrl >http://www.kangaroostandard.com/</>
-   <ver >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\bin\x64\Release\Exact Ferret.exe</>
+   <ver >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\bin\x64\Release\Exact Ferret.exe</>
    <supurl ></>
    <updurl ></>
    <dlgfont >verdana</>
    <headlogo >default - 1</>
    <dlgfontsize >s8</>
-   <output >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Files</>
+   <output >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\Installation Files\Files</>
    <exename >InstallExactFerret-admin.exe</>
    <beffile ></>
    <aftfile ></>
@@ -106,63 +106,63 @@
                   <srclist >
                      <rows >
                         <_ >
-                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Scripts\StopExactFerret.ps1</>
+                           <filename >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\Installation Files\Scripts\StopExactFerret.ps1</>
                            <recurse >1</>
                            <justfile >0</>
                            <emptydir >0</>
                            <exclude ></>
                         </>
                         <_ >
-                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Scripts\CreateHelpShortcut.ps1</>
+                           <filename >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\Installation Files\Scripts\CreateHelpShortcut.ps1</>
                            <recurse >1</>
                            <justfile >0</>
                            <emptydir >0</>
                            <exclude ></>
                         </>
                         <_ >
-                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Scripts\SetPathEnvVar.ps1</>
+                           <filename >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\Installation Files\Scripts\SetPathEnvVar.ps1</>
                            <recurse >1</>
                            <justfile >0</>
                            <emptydir >0</>
                            <exclude ></>
                         </>
                         <_ >
-                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Scripts\UnsetPathEnvVar.ps1</>
+                           <filename >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\Installation Files\Scripts\UnsetPathEnvVar.ps1</>
                            <recurse >1</>
                            <justfile >0</>
                            <emptydir >0</>
                            <exclude ></>
                         </>
                         <_ >
-                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Scripts\SaveSetupPathTempFile.ps1</>
+                           <filename >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\Installation Files\Scripts\SaveSetupPathTempFile.ps1</>
                            <recurse >1</>
                            <justfile >0</>
                            <emptydir >0</>
                            <exclude ></>
                         </>
                         <_ >
-                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Scripts\Windows7LockUnprep.ps1</>
+                           <filename >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\Installation Files\Scripts\Windows7LockUnprep.ps1</>
                            <recurse >1</>
                            <justfile >0</>
                            <emptydir >0</>
                            <exclude ></>
                         </>
                         <_ >
-                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Scripts\UnsetMachineEnvVar.ps1</>
+                           <filename >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\Installation Files\Scripts\UnsetMachineEnvVar.ps1</>
                            <recurse >1</>
                            <justfile >0</>
                            <emptydir >0</>
                            <exclude ></>
                         </>
                         <_ >
-                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Scripts\SetMachineEnvVar.ps1</>
+                           <filename >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\Installation Files\Scripts\SetMachineEnvVar.ps1</>
                            <recurse >1</>
                            <justfile >0</>
                            <emptydir >0</>
                            <exclude ></>
                         </>
                         <_ >
-                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Scripts\Windows7LockPrep.ps1</>
+                           <filename >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\Installation Files\Scripts\Windows7LockPrep.ps1</>
                            <recurse >1</>
                            <justfile >0</>
                            <emptydir >0</>
@@ -406,84 +406,84 @@
                         <srclist >
                            <rows rel = unpack >
                               <_ >
-                                 <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\bin\x64\Release\Exact Ferret.exe</>
+                                 <filename >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\bin\x64\Release\Exact Ferret.exe</>
                                  <recurse >1</>
                                  <justfile >0</>
                                  <emptydir >0</>
                                  <exclude ></>
                               </>
                               <_ >
-                                 <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\JpegMetaData\bin\x86\Release\JpegMetaData.exe</>
+                                 <filename >C:\Users\jigglypuff\git\Exact Ferret\\JpegMetaData\bin\x86\Release\JpegMetaData.exe</>
                                  <recurse >1</>
                                  <justfile >0</>
                                  <emptydir >0</>
                                  <exclude ></>
                               </>
                               <_ >
-                                 <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\bin\x64\Release\Newtonsoft.Json.dll</>
+                                 <filename >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\bin\x64\Release\Newtonsoft.Json.dll</>
                                  <recurse >1</>
                                  <justfile >0</>
                                  <emptydir >0</>
                                  <exclude ></>
                               </>
                               <_ >
-                                 <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Files\vcomp100.dll</>
+                                 <filename >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\Installation Files\Files\vcomp100.dll</>
                                  <recurse >1</>
                                  <justfile >0</>
                                  <emptydir >0</>
                                  <exclude ></>
                               </>
                               <_ >
-                                 <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\bin\x64\Release\Exact Ferret.exe.config</>
+                                 <filename >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\bin\x64\Release\Exact Ferret.exe.config</>
                                  <recurse >1</>
                                  <justfile >0</>
                                  <emptydir >0</>
                                  <exclude ></>
                               </>
                               <_ disabled = 1 >
-                                 <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\bin\x64\Release\Exact Ferret.pdb</>
+                                 <filename >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\bin\x64\Release\Exact Ferret.pdb</>
                                  <recurse >1</>
                                  <justfile >0</>
                                  <emptydir >0</>
                                  <exclude ></>
                               </>
                               <_ >
-                                 <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Files\blank.jpg</>
+                                 <filename >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\Installation Files\Files\blank.jpg</>
                                  <recurse >1</>
                                  <justfile >0</>
                                  <emptydir >0</>
                                  <exclude ></>
                               </>
                               <_ >
-                                 <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Files\convert.exe</>
+                                 <filename >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\Installation Files\Files\convert.exe</>
                                  <recurse >1</>
                                  <justfile >0</>
                                  <emptydir >0</>
                                  <exclude ></>
                               </>
                               <_ >
-                                 <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Tray Icon\bin\x64\Release\Exact Ferret Tray Icon.exe</>
+                                 <filename >C:\Users\jigglypuff\git\Exact Ferret\\Tray Icon\bin\x64\Release\Exact Ferret Tray Icon.exe</>
                                  <recurse >1</>
                                  <justfile >0</>
                                  <emptydir >0</>
                                  <exclude ></>
                               </>
                               <_ disabled = 1 >
-                                 <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Tray Icon\bin\x64\Release\Exact Ferret Tray Icon.exe.config</>
+                                 <filename >C:\Users\jigglypuff\git\Exact Ferret\\Tray Icon\bin\x64\Release\Exact Ferret Tray Icon.exe.config</>
                                  <recurse >1</>
                                  <justfile >0</>
                                  <emptydir >0</>
                                  <exclude ></>
                               </>
                               <_ disabled = 1 >
-                                 <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Tray Icon\bin\x64\Release\Exact Ferret Tray Icon.pdb</>
+                                 <filename >C:\Users\jigglypuff\git\Exact Ferret\\Tray Icon\bin\x64\Release\Exact Ferret Tray Icon.pdb</>
                                  <recurse >1</>
                                  <justfile >0</>
                                  <emptydir >0</>
                                  <exclude ></>
                               </>
                               <_ >
-                                 <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Files\bin</>
+                                 <filename >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\Installation Files\Files\bin</>
                                  <recurse >1</>
                                  <justfile >0</>
                                  <emptydir >0</>
@@ -507,14 +507,14 @@
                         <srclist >
                            <rows rel = unpack >
                               <_ >
-                                 <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Files\dictionary.txt</>
+                                 <filename >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\Installation Files\Files\dictionary.txt</>
                                  <recurse >1</>
                                  <justfile >0</>
                                  <emptydir >0</>
                                  <exclude ></>
                               </>
                               <_ >
-                                 <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Files\Dictionaries</>
+                                 <filename >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\Installation Files\Files\Dictionaries</>
                                  <recurse >1</>
                                  <justfile >0</>
                                  <emptydir >0</>
@@ -538,14 +538,14 @@
                         <srclist >
                            <rows rel = unpack >
                               <_ >
-                                 <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Files\dictionary.txt</>
+                                 <filename >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\Installation Files\Files\dictionary.txt</>
                                  <recurse >1</>
                                  <justfile >0</>
                                  <emptydir >0</>
                                  <exclude ></>
                               </>
                               <_ >
-                                 <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Files\Dictionaries</>
+                                 <filename >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\Installation Files\Files\Dictionaries</>
                                  <recurse >1</>
                                  <justfile >0</>
                                  <emptydir >0</>
@@ -841,7 +841,7 @@
                   <srclist >
                      <rows >
                         <_ >
-                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Files\openHelpAfter</>
+                           <filename >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\Installation Files\Files\openHelpAfter</>
                            <recurse >1</>
                            <justfile >0</>
                            <emptydir >0</>
@@ -876,7 +876,7 @@
                   <srclist >
                      <rows >
                         <_ >
-                           <filename >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Files\finished</>
+                           <filename >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\Installation Files\Files\finished</>
                            <recurse >1</>
                            <justfile >0</>
                            <emptydir >0</>
@@ -911,9 +911,9 @@
                   <if >openHelpAfter</>
                </>
             </>
-            <icofile >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Icons\Tpdkdesign.net-Refresh-Cl-System-Install-1.ico</>
+            <icofile >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\Installation Files\Icons\Tpdkdesign.net-Refresh-Cl-System-Install-1.ico</>
             <resfile ></>
-            <leftimg >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Resources\ferret.jpg</>
+            <leftimg >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\Resources\ferret.jpg</>
             <caption ></>
             <verinfo >1</>
             <noadmin >0</>
@@ -1067,9 +1067,9 @@
                   <if ></>
                </>
             </>
-            <unicon >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Installation Files\Icons\Tpdkdesign.net-Refresh-Cl-System-Install-1.ico</>
+            <unicon >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\Installation Files\Icons\Tpdkdesign.net-Refresh-Cl-System-Install-1.ico</>
             <unresfile ></>
-            <leftimg >C:\Users\jigglypuff\Documents\Visual Studio 2013\Projects\Exact Ferret\Exact Ferret\Resources\ferret.jpg</>
+            <leftimg >C:\Users\jigglypuff\git\Exact Ferret\\Exact Ferret\Resources\ferret.jpg</>
             <caption ></>
             <noadmin >0</>
          </>
