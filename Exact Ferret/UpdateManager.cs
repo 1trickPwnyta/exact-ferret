@@ -12,7 +12,7 @@ namespace Exact_Ferret
 {
     class UpdateManager
     {
-        private const int DISCRETE_SOFTWARE_VERSION = 18;
+        private const int DISCRETE_SOFTWARE_VERSION = 19;
 
         private const string VERSION_QUERY_URL = "https://www.kangaroostandard.com/ExactFerret/version";
         private const string UPDATE_URL = "https://www.kangaroostandard.com/ExactFerret/update";
