@@ -14,8 +14,8 @@ namespace Exact_Ferret
     {
         private const int DISCRETE_SOFTWARE_VERSION = 18;
 
-        private const string VERSION_QUERY_URL = "https://exactferret.kangaroostandard.com/version";
-        private const string UPDATE_URL = "https://exactferret.kangaroostandard.com/update";
+        private const string VERSION_QUERY_URL = "https://www.kangaroostandard.com/ExactFerret/version";
+        private const string UPDATE_URL = "https://www.kangaroostandard.com/ExactFerret/update";
         private const string UPDATE_TEMP_FILE_NAME = "UpdateExactFerret.exe";
         private const string UPDATE_TRUSTED_CERT_ISSUER = "CN=kangaroostandard.com";
         private const string UPDATE_TRUSTED_CERT_THUMBPRINT = "95c2569335dcdd4980a4bc0a5c3cab3b3c39b159";
@@ -31,7 +31,7 @@ namespace Exact_Ferret
             int latestVersion;
             try
             {
-                latestVersion = int.Parse(HttpUtil.get("https://exactferret.kangaroostandard.com/version"));
+                latestVersion = int.Parse(HttpUtil.get(VERSION_QUERY_URL));
                 Log.trace("Latest version: " + latestVersion);
             }
             catch (Exception e)
