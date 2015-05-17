@@ -3,7 +3,6 @@ obj/
 packages/
 *.csproj
 *.csproj.user
-*.Designer.cs
 *.dll
 *.pdb
 *.log
