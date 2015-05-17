@@ -1,8 +1,10 @@
 # README #
 
 ### To-Do List ###
-* Update the automatic update URL.
-* Add the new update URL certificate to trust.
+* Figure out why the desktop label gets enabled when installing the new version.
+* Test these:
+    * Update the automatic update URL.
+    * Add the new update URL certificate to trust.
 
 ### How to Release a New Version ###
 1. Update the help file.
