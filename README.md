@@ -12,7 +12,7 @@
 5. Uncomment the code in Desktop.cs for Windows 8 (if commented)
 6. Check for updates to Image Magick (use 32-bit .zip version).
 7. Build the Release version of the software.
-8. Build the installer file.
+8. Build the installer file (must be done on UNICORN).
 9. Perform testing.
 10. Set the installer file at https://exactferret.kangaroostandard.com/update.
 11. Set the version number at https://exactferret.kangaroostandard.com/version to match the new DISCRETE_SOFTWARE_VERSION.
