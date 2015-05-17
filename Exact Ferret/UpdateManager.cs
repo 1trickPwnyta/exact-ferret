@@ -17,9 +17,9 @@ namespace Exact_Ferret
         private const string VERSION_QUERY_URL = "https://www.kangaroostandard.com/ExactFerret/version";
         private const string UPDATE_URL = "https://www.kangaroostandard.com/ExactFerret/update";
         private const string UPDATE_TEMP_FILE_NAME = "UpdateExactFerret.exe";
-        private const string UPDATE_TRUSTED_CERT_ISSUER = "CN=kangaroostandard.com";
-        private const string UPDATE_TRUSTED_CERT_THUMBPRINT = "95c2569335dcdd4980a4bc0a5c3cab3b3c39b159";
-        private const string UPDATE_TRUSTED_CERT_THUMBPRINT_OLD = "64f22c453dec5820fe027738cc38ab75d93491c2";
+        private const string UPDATE_TRUSTED_CERT_ISSUER = "CN=StartCom Class 1 Primary Intermediate Server CA";
+        private const string UPDATE_TRUSTED_CERT_THUMBPRINT = "7d8705667c933514c9396ffc12d7278b297b37ff";
+        private const string UPDATE_TRUSTED_CERT_THUMBPRINT_OLD = "95c2569335dcdd4980a4bc0a5c3cab3b3c39b159";
 
         public static void checkForUpdates()
         {
