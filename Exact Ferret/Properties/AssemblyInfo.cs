@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Kangaroo Standard")]
 [assembly: AssemblyProduct("Exact Ferret")]
-[assembly: AssemblyCopyright("Copyright © 2013-2014 Kangaroo Standard")]
+[assembly: AssemblyCopyright("Copyright © 2015 Kangaroo Standard")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("3.4.0")]
-[assembly: AssemblyFileVersion("3.4.0")]
+[assembly: AssemblyVersion("3.4.1")]
+[assembly: AssemblyFileVersion("3.4.1")]
