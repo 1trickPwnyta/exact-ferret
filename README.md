@@ -13,8 +13,8 @@
 7. Build the Release version of the software.
 8. Build the installer file (must be done on UNICORN).
 9. Perform testing.
-10. Set the installer file at https://exactferret.kangaroostandard.com/update.
-11. Set the version number at https://exactferret.kangaroostandard.com/version to match the new DISCRETE_SOFTWARE_VERSION.
+10. Set the installer file at https://www.kangaroostandard.com/ExactFerret/update.
+11. Set the version number at https://www.kangaroostandard.com/ExactFerret/version to match the new DISCRETE_SOFTWARE_VERSION.
 12. Update the software at http://games.kangaroostandard.com with the new version.
 
 ### Test Cases ###
