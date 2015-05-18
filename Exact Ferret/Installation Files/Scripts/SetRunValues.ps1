@@ -10,6 +10,3 @@ New-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run -Name
 
 Remove-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run -Name "Exact Ferret Shortcut Reset" -ErrorAction SilentlyContinue
 New-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run -Name "Exact Ferret Shortcut Reset" -PropertyType String -Value "`"$installDir\Exact Ferret.exe`" -r" -ErrorAction SilentlyContinue
-
-Remove-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run -Name "Exact Ferret Desktop Label" -ErrorAction SilentlyContinue
-New-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run -Name "Exact Ferret Desktop Label" -PropertyType String -Value "`"$installDir\Exact Ferret Tray Icon.exe`" -k" -ErrorAction SilentlyContinue
