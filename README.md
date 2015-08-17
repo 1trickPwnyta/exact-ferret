@@ -1,7 +1,8 @@
 # README #
 
 ### To-Do List ###
-
+* Fix bug where settings are overwritten by previous version's settings every time the service or control panel starts, making it impossible to change your settings without modifying the XML file for the previous version. MAJOR bug.
+* Change update manager to trust certificates based on OS trust so that it can be updated any time without having to update the software when a new certificate is used.
 
 ### How to Release a New Version ###
 1. Update the help file.
